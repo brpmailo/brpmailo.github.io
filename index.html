@@ -237,16 +237,17 @@
 <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
+   
+
+	 <style>
        body {
     font-family: 'Poppins', sans-serif;    margin: 0;    padding: 0;    display: flex;    flex-direction: column;    min-height: 100vh;    overflow-x: hidden;    background: url('student.jpg') no-repeat center center/cover;    color: white;    position: relative;
-}body {   position: relative;
+}
+    position: relative;
     min-height: 100vh;
     background-attachment: fixed;
     background-position: center;
 }
-
-body {
     background: url('student.jpg') no-repeat center center/cover;
     min-height: 100vh;
     background-attachment: fixed;
@@ -366,11 +367,9 @@ html, body {
     font-weight: bold;
     position: relative;
     z-index: 2;
-}
-.main-container {
     width: 100%;
     max-width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 
@@ -606,7 +605,8 @@ background: purple;
 
 @media (max-width: 768px) {
     .binfo-section {
-        width: 95%; 
+        width: 95%;
+        padding: 15px;
     }
 }
 
@@ -717,7 +717,6 @@ background: purple;
 }
 
 
-
     </style>
 </head>
 
@@ -766,7 +765,7 @@ background: purple;
 
 <!-- Main Content -->
 <div class="main-container">
-    <h1 class="slide-text">कहिल्यै हार नमान<br>सफलता कहिलेकाहीँ अन्तिम<br> प्रयासमै लुकेको हुन्छ।</h1>
+    <h1 class="slide-text">विश्व परिवर्तनको<br>एक सक्तिशाली हतियार भनेको<br> शिक्षा मात्र हो ।</h1>
  <p class="slide-ttext">Education is the most powerful weapon to change the world.</p> 
     <div class="button-container">
         <a href="https://school.baburamphuyal.com.np/" target="_blank" class="slide-button">For Students</a>
@@ -781,146 +780,222 @@ background: purple;
 
 
 
-<!-- Blue Info Section -->
+<!-- Professional Info Section -->
 <div class="info-section">
-    <h2 style="color: white;">'Welcome to Brp Digital Institute'</h2>
-    <p style="font-size: 1.1rem;">
-        ​<b style="color: orange;">Brp Digital Institute</b> is a website dedicated to educational and literary content, aiming to provide free study materials and resources. The site offers various pages catering to different interests:<br><br>
-       <ul style="color: yellow; padding-left: 20px; text-align: left;">
-    <li><b>📚Educational</li>
-    <li> <b>💻Computer & Technology</li>
-    <li> <b>📝Literary Content</li>
-    <li> <b>🎓Courses</li>
-    <li>🧠Quiz</b></li>
-
-</ul>
-
-        <br><b style="color: #ff5733;">The website is completely free and accessible to all users.</b>
-    </p>
+  <h2>Welcome to !<br><span>Brp Digital Institute</span></h2>
+  <p>
+    <b>Brp Digital Institute</b> is a website dedicated to educational and literary content, aiming to provide free study materials and resources. Explore various sections catering to different interests:
+  </p>
+  <ul>
+    <li>📚 <b>Educational</b></li>
+    <li>💻 <b>Computer & Technology</b></li>
+    <li>📝 <b>Literary Content</b></li>
+    <li>🎓 <b>Courses</b></li>
+    <li>🧠 <b>Quiz</b></li>
+    <li>🏫 <b>School Login</b></li>
+  </ul>
+  <p class="highlight">
+    The website is completely free and accessible to all users.
+  </p>
 </div>
 
+<style>
+.info-section {
+  background: linear-gradient(135deg, #0d1b2a, #1b263b);
+  padding: 30px 20px;
+  border-radius: 12px;
+  color: #f0f0f0;
+  max-width: 800px;
+  margin: 40px 0 40px 20px; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.info-section h2 {
+  font-size: 2rem;
+  color: #ffd700;
+  text-align: center; 
+  margin-bottom: 15px;
+}
+
+.info-section h2 span {
+  color: #ff6f61;
+  font-style: italic;
+}
+
+.info-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left; 
+  margin-bottom: 20px;
+}
+
+.info-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+.info-section ul li {
+  background: rgba(255, 255, 255, 0.1);
+  margin: 8px 0;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.info-section ul li:hover {
+  background: rgba(255, 111, 97, 0.2);
+}
+
+.info-section ul li b {
+  color: #ffd700;
+}
+
+.info-section .highlight {
+  font-weight: bold;
+  color: #ff6f61;
+  text-align: left; 
+  font-size: 1.1rem;
+}
 
 
+@media (max-width: 768px) {
+  .info-section {
+    margin: 20px auto; /* center on mobile */
+    width: 95%;
+    padding: 20px;
+  }
 
-
-
-
-
-
+  .info-section h2,
+  .info-section p,
+  .info-section .highlight {
+    text-align: center; /* center on mobile */
+  }
+}
+</style>
 
 
 
 
 <section class="section">
-<h2>Here’s something for you✅</h2>
+  <h2>Here’s something for you✅</h2>
+
   <div class="programs-wrapper" id="scrollWrapper">
     <div class="programs" id="programs">
-      <a class="program-card pink" href="https://result.baburamphuyal.com.np/" target="_blank" rel="noopener noreferrer">
+      <a class="program-card pink" href="https://result.baburamphuyal.com.np/" target="_blank">
         <div class="icon">👥</div>
         <div>Students Result</div>
-      </a>
-      <a class="program-card blue" href="https://drive.google.com/drive/folders/YOUR_DRIVE_FOLDER_ID" target="_blank" rel="noopener noreferrer">
-        <div class="icon">👨‍🏫</div>
-        <div>Teachers Routine</div>
-      </a>
-      <a class="program-card green" href="https://baburamphuyal.com.np/saikshik.html" target="_blank" rel="noopener noreferrer">
-        <div class="icon">📝</div>
-        <div>Daily Homework</div>
-      </a>
-      <a class="program-card cyan" href="https://drive.google.com/drive/folders/YOUR_DRIVE_FOLDER_ID" target="_blank" rel="noopener noreferrer">
-        <div class="icon">🌿</div>
-        <div>ECD</div>
-      </a>
-      <a class="program-card coral" href="https://drive.google.com/drive/folders/YOUR_DRIVE_FOLDER_ID" target="_blank" rel="noopener noreferrer">
-        <div class="icon">📊</div>
-        <div>Class wise</div>
-      </a>
-      <a class="program-card navy" href="https://drive.google.com/drive/folders/" target="_blank" rel="noopener noreferrer">
-        <div class="icon">💻</div>
-        <div>Link</div>
       </a>
 
-      <!-- repetated link -->
-      <a class="program-card pink" href="https://result.baburamphuyal.com.np/" target="_blank" rel="noopener noreferrer">
-        <div class="icon">👥</div>
-        <div>Students Result</div>
-      </a>
-      <a class="program-card blue" href="https://drive.google.com/drive/folders/YOUR_DRIVE_FOLDER_ID" target="_blank" rel="noopener noreferrer">
+      <a class="program-card blue" href="">
         <div class="icon">👨‍🏫</div>
-        <div>Teachers Routine</div>
+        <div>Meet our TEch-Team</div>
       </a>
-      <a class="program-card green" href="https://drive.google.com/drive/folders/YOUR_DRIVE_FOLDER_ID" target="_blank" rel="noopener noreferrer">
+
+      <a class="program-card green" href="https://baburamphuyal.com.np/saikshik.html" target="_blank">
         <div class="icon">📝</div>
-        <div>Daily Homework</div>
+        <div>ddd</div>
       </a>
-      <a class="program-card cyan" href="https://drive.google.com/drive/folders/YOUR_DRIVE_FOLDER_ID" target="_blank" rel="noopener noreferrer">
+
+      <a class="program-card cyan" href="#">
         <div class="icon">🌿</div>
         <div>ECD</div>
       </a>
-      <a class="program-card coral" href="https://drive.google.com/drive/folders/YOUR_DRIVE_FOLDER_ID" target="_blank" rel="noopener noreferrer">
+
+      <a class="program-card coral" href="#">
         <div class="icon">📊</div>
         <div>Class wise</div>
       </a>
-      <a class="program-card navy" https://brp.baburamphuyal.com.np/" target="_blank" rel="noopener noreferrer">
-        <div class="icon">💻</div>
-        <div>Support</div>
+
+    <a class="program-card navy" href="mailto:support.brpmailo@gmail.com" target="_blank">
+  <div class="icon">💻</div>
+  <div>Support</div>
       </a>
+     </a>
     </div>
   </div>
+</section>
 
-  <style>
-    .programs-wrapper {
-      overflow: hidden;
-      cursor: grab;
-      user-select: none;
-      padding: 20px 0;
-      border-radius: 8px;
-      position: relative;
-    }
- .section {
-    background-color: #003300;
-    padding: 40px 20px;
+
+<style>
+.section {
+  background-color: #003300;
+  padding: 40px 20px;
+  color: white;
+}
+
+.programs-wrapper {
+  overflow: hidden;
+  padding: 20px 0;
+  border-radius: 8px;
+  position: relative;
+}
+
+.programs {
+  display: flex;
+  gap: 1rem;
+  min-width: max-content;
+  animation: scrollLeft 20s linear infinite;
+}
+
+.program-card {
+  flex: 0 0 auto;
+  min-width: 180px;
+  max-width: 220px;
+  background: #1abc9c;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: black;
+  outline: 3px solid transparent;
+  transition: outline 0.2s ease, background-color 0.3s;
+}
+
+.program-card:focus,
+.program-card:hover {
+  outline: 3px solid red;
+  outline-offset: 2px;
+  background-color: #ecf0f1;
+}
+
+.pink { background-color: #ffb6c1; }
+.blue { background-color: #add8e6; }
+.green { background-color: #90ee90; }
+.cyan { background-color: #e0ffff; }
+.coral { background-color: #f08080; }
+.navy { background-color: #f1c40f; color: black; }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .program-card {
+    min-width: 140px;
+    max-width: 160px;
+    padding: 0.8rem;
+    font-size: 0.9rem;
   }
-    .programs-wrapper.active {
-      cursor: grabbing;
-    }
+}
 
-    .programs {
-      display: flex;
-      gap: 1rem;
-      will-change: transform;
-    }
+/* Continuous left scroll animation */
+@keyframes scrollLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+</style>
 
-    .program-card {
-      flex: 0 0 auto;
-      min-width: 250px;
-      max-width: 250px;
-      background: #1abc9c;
-      border-radius: 12px;
-      padding: 1rem;
-      text-align: center;
-      font-weight: bold;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-decoration: none;
-      color: black;
-      outline: 3px solid transparent;
-      transition: outline 0.2s ease, background-color 0.3s;
-    }
+<script>
+// Duplicate cards for infinite left scroll
+const programs = document.getElementById('programs');
+programs.innerHTML += programs.innerHTML;
+</script>
 
-    .program-card:focus,
-    .program-card:hover {
-      outline: 3px solid red;
-      outline-offset: 2px;
-      background-color: #ecf0f1;
-    }
 
-    .pink { background-color: #ffb6c1; }
-    .blue { background-color: #add8e6; }
-    .green { background-color: #90ee90; }
-    .cyan { background-color: #e0ffff; }
-    .coral { background-color: #f08080; }
-    .navy { background-color: #f1c40f; color: black; }
-  </style>
+
+
+
 
   <script>
     const wrapper = document.getElementById('scrollWrapper');
@@ -1112,17 +1187,6 @@ background: purple;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 <section style="padding: 40px; background: powderblue;">
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
 
@@ -1171,8 +1235,6 @@ background: purple;
 <div class="scroll-to-top" id="scrollToTopBtn">
     ↑
 </div> 
-
-
 
 
 
@@ -1228,7 +1290,12 @@ background: purple;
       top: 3px;
       font-size: 1.25rem;
     }
-  </style>
+</style>
+
+
+
+
+
 
   <div class="toggle-btns">
     <div class="toggle-btn" onclick="toggleContent('termsContent')">📜 Terms & Conditions</div>
@@ -1246,6 +1313,7 @@ background: purple;
       <li><span>✅</span> We reserve the right to change these terms at any time without prior notice.</li>
     </ul>
   </div>
+
 
   <div id="privacyContent" class="toggle-content">
     <ul>
@@ -1281,22 +1349,22 @@ background: purple;
 
 
 
-<!-- Footer -->
-<div class="footer">
 
-  <!-- Top Row -->
+<div class="footer">
   <div class="footer-top">
-    <!-- More Info Left -->
     <div class="more-info">
-      <h3>📌About Web</h3>
+      <h3>About Website</h3>
       <p><b>Brp Digital Institute</b> is a free and educational website created to support Nepali students, teachers, and literature lovers. The main purpose of this site is to provide accessible and useful learning materials in a simple and easy-to-understand format. It offers class-wise study notes, practice questions, and quizzes to help students prepare for their exams more effectively.
 In addition to academic content, the website also provides basic computer education, including lessons on Microsoft Word, Excel, PowerPoint, and computer hardware and networking. For those interested in creativity and expression, it features a collection of Nepali literary works such as poems, ghazals, muktaks, and essays. The site also includes downloadable design files (like MS Word and Photoshop templates), and tools like a gradesheet generator to help manage student results easily.
 The entire platform is designed with simplicity in mind, making it easy to use on both computers and mobile devices. Whether you're a student preparing for exams, a teacher looking for resources, or someone interested in Nepali literature and IT, baburamphuyal.com.np is made for you.</p>
     </div>
 
+
+
+
     <!-- Help Links Right -->
     <div class="help-links">
-      <h3>🔗 Help Links</h3>
+      <h3>Help Links</h3>
       <ul>
         <li><a href="https://kuberjungthapa.com.np/" target="_blank">KJT Sir</a></li>
         <li><a href="https://moecdc.gov.np/" target="_blank">CDC Nepal</a></li>
@@ -1314,16 +1382,19 @@ The entire platform is designed with simplicity in mind, making it easy to use o
 
 
     
-  <!-- Designer Center -->
+ 
   <div class="footer-designer">
-    <p>© Brp Digital Institute। All Rights Reserved।</p>
+   <p>
+  <span style="color:#ff6b6b;">© 2026</span> 
+  <span style="color:#4ecdc4;">Brp Digital Institute</span> 
+  <span style="color:#ffe66d;">।All Rights Reserved।</span>
+</p>
     <p>Designed by: <a href="https://brpmailo.baburamphuyal.com.np/" target="_blank">Brp Mailo</a></p>
   </div>
 
-  <!-- Social Links -->
+ 
   <div class="footer-social">
     <a href="https://www.facebook.com/brp.mailo" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
     <a href="https://www.linkedin.com/in/brp-mailo-0937b5329" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
     <a href="https://www.tiktok.com/@brpmailobaburam1" target="_blank"><i class="fab fa-tiktok fa-lg"></i></a>
     <a href="http://www.youtube.com/@brpmailo" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
@@ -1412,25 +1483,6 @@ scrollToTopBtn.onclick = function() {
 
 
 
-
-
-
-
-
-
-
-
-function toggleMenu() {
-    document.querySelector(".nav-container").classList.toggle("show");
-}
-function toggleMenu() {
-    const menu = document.querySelector(".mobile-menu");
-    if (menu.style.left === "0px") {
-        menu.style.left = "-250px"; // Hide Menu
-    } else {
-        menu.style.left = "0px"; // Show Menu
-    }
-}
 function toggleMenu() {
     const menu = document.querySelector(".nav-container");
     if (menu.classList.contains("show")) {
@@ -1443,13 +1495,3 @@ function toggleMenu() {
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
