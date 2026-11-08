@@ -1335,10 +1335,108 @@ img{ max-width:100%; display:block; }
   .live-bar{ gap:15px; }
   .live-item{ font-size:12px; }
 }
+
+
+
+
+/* ==================== TIHAR POPUP ==================== */
+.tihar-popup-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(10,15,30,0.88);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+  z-index:99999;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+.tihar-popup-overlay.open{ display:flex; }
+
+.tihar-popup-box{
+  position:relative;
+  max-width:480px;
+  width:100%;
+  max-height:92vh;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 50px 100px rgba(0,0,0,0.6), 0 0 0 2px rgba(244,162,97,0.5);
+  animation:tiharPop 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  background:#1a0a2e;
+}
+
+@keyframes tiharPop{
+  0%{ opacity:0; transform:scale(0.5) rotate(-5deg); }
+  70%{ transform:scale(1.05) rotate(2deg); }
+  100%{ opacity:1; transform:scale(1) rotate(0); }
+}
+
+.tihar-popup-box img{
+  width:100%;
+  height:auto;
+  max-height:92vh;
+  object-fit:contain;
+  display:block;
+}
+
+.tihar-popup-close{
+  position:absolute;
+  top:12px;
+  right:12px;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:rgba(0,0,0,0.55);
+  border:1px solid rgba(255,255,255,0.3);
+  color:white;
+  font-size:24px;
+  cursor:pointer;
+  z-index:10;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  transition:all 0.3s ease;
+  line-height:1;
+  font-family:inherit;
+}
+
+.tihar-popup-close:hover{
+  background:#e76f51;
+  transform:rotate(90deg) scale(1.1);
+}
+
+@media(max-width:500px){
+  .tihar-popup-box{ max-width:100%; border-radius:18px; }
+  .tihar-popup-close{ width:36px; height:36px; font-size:22px; }
+}
+
+
+
+
 </style>
 </head>
 
 <body>
+
+
+
+
+<!-- ==================== TIHAR POPUP ==================== -->
+<div class="tihar-popup-overlay" id="tiharPopup">
+  <div class="tihar-popup-box">
+    <button class="tihar-popup-close" id="tiharClose" aria-label="Close">&times;</button>
+    <img src="tihar.jpg" alt="Tihar Shubhakamana"
+         onerror="this.src='https://ui-avatars.com/api/?name=Tihar+2082&background=f4a261&color=fff&size=600&bold=true&font-size=0.25'">
+  </div>
+</div>
+
+
+
+
+
+
 
 <!-- ==================== NAVBAR ==================== -->
 <div class="navbar" id="navbar">
@@ -2148,6 +2246,50 @@ document.querySelectorAll('.chart-card').forEach(card => {
     card.style.transform = '';
   });
 });
+
+
+
+
+/* ==================== TIHAR POPUP ==================== */
+const tiharPopup = document.getElementById('tiharPopup');
+const tiharClose = document.getElementById('tiharClose');
+
+function closeTihar(){
+  tiharPopup.classList.remove('open');
+  document.body.style.overflow = '';
+  sessionStorage.setItem('tiharSeen', 'true');
+}
+
+// Show after 800ms (once per session)
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    if (!sessionStorage.getItem('tiharSeen')){
+      tiharPopup.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+  }, 800);
+});
+
+tiharClose.addEventListener('click', closeTihar);
+
+tiharPopup.addEventListener('click', (e) => {
+  if (e.target === tiharPopup) closeTihar();
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && tiharPopup.classList.contains('open')){
+    closeTihar();
+  }
+});
+
+
+
+
+
+
+
+
+
 </script>
 
 </body>
