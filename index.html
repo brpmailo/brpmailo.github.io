@@ -1357,7 +1357,7 @@ img{ max-width:100%; display:block; }
 
 .tihar-popup-box{
   position:relative;
-  max-width:480px;
+  max-width:700px;
   width:100%;
   max-height:92vh;
   border-radius:24px;
@@ -1413,8 +1413,6 @@ img{ max-width:100%; display:block; }
 }
 
 
-
-
 </style>
 </head>
 
@@ -1427,11 +1425,11 @@ img{ max-width:100%; display:block; }
 <div class="tihar-popup-overlay" id="tiharPopup">
   <div class="tihar-popup-box">
     <button class="tihar-popup-close" id="tiharClose" aria-label="Close">&times;</button>
-    <img src="tihar.jpg" alt="Tihar Shubhakamana"
+    <img src="https://raw.githubusercontent.com/brpmailo/photos/main/tihar.png"
+         alt="Tihar Shubhakamana 2082"
          onerror="this.src='https://ui-avatars.com/api/?name=Tihar+2082&background=f4a261&color=fff&size=600&bold=true&font-size=0.25'">
   </div>
 </div>
-
 
 
 
@@ -2250,6 +2248,8 @@ document.querySelectorAll('.chart-card').forEach(card => {
 
 
 
+
+
 /* ==================== TIHAR POPUP ==================== */
 const tiharPopup = document.getElementById('tiharPopup');
 const tiharClose = document.getElementById('tiharClose');
@@ -2260,7 +2260,6 @@ function closeTihar(){
   sessionStorage.setItem('tiharSeen', 'true');
 }
 
-// Show after 800ms (once per session)
 window.addEventListener('load', () => {
   setTimeout(() => {
     if (!sessionStorage.getItem('tiharSeen')){
@@ -2281,8 +2280,6 @@ document.addEventListener('keydown', (e) => {
     closeTihar();
   }
 });
-
-
 
 
 
